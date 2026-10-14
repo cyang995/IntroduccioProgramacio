@@ -1,1 +1,2 @@
-let 
+const num = 2
+console.log(variableA);
