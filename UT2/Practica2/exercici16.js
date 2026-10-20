@@ -1,2 +1,4 @@
 const num = 2
-console.log(variableA);
+const edad = 18
+
+console.log(num);
