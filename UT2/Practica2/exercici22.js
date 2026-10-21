@@ -1,0 +1,13 @@
+const prompt = require('prompt-sync')();
+let num1 = prompt("Introduce un número: ");
+num1 = Number(num1);
+let num2 = prompt("Introduce otro número: ");
+num2 = Number(num2);
+let suma = num1 + num2;
+console.log("La suma de los dos números es: " , suma);
+let resta = num1 - num2;
+console.log("la resta de los dos números es: ", resta);
+let multiplicacion = num1 * num2;
+console.log("la multiplicación de los dos números es: ", multiplicacion);
+let division = num1 / num2;
+console.log("la división de los dos números es: ", division);
