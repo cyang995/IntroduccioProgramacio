@@ -1,22 +1,22 @@
 // Cas A
-let hora = 9;
-if (hora < 10 || hora > 18) {
+let horaA = 9;
+if (horaA < 10 || horaA > 18) {
 console.log("Accés denegat");
 }
 // acceso denegado, ya que la hora es menor que 10
 
 // Cas B
-let hora = 15;
-let capDeSetmana = false;
-if (hora < 10 || hora > 18 || capDeSetmana) {
+let horaB = 15;
+let capDeSetmanaB = false;
+if (horaB < 10 || horaB > 18 || capDeSetmanaB) {
 console.log("Accés denegat");
 }
 //Acceso denegado, ya que capDeSetmana es false
 
 // Cas C
-let hora = 17;
-let capDeSetmana = true;
-if (hora < 10 && hora > 18 && capDeSetmana) {
+let horaC = 17;
+let capDeSetmanaC = true;
+if (horaC < 10 && horaC > 18 && capDeSetmanaC) {
 console.log("Accés denegat");
 }
 
