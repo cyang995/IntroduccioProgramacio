@@ -33,23 +33,33 @@ if (varida) {
     else if (octet1 >= 240 && octet1 <= 255) {
         classe = "E";
     }
-    else {
-        console.log("Adreça no vàlida: cada octet ha d'estar entre 0 i 255.")
-    }
-switch (classe) {
-    case "A":
-        console.log("Mascara por defecto: 255.0.0.0");
-        break;
-    case "B":
-        console.log("Mascara por defecto: 255.255.0.0");
-        break;
-    case "C":
-        console.log("Mascara por defecto: 255.255.255.0");
-        break;
-        default:
-            console.log ("Máscara por defecto: No tiene");
+    //parte 5
+    if (classe === "A" || classe === "B" || classe === "C") {
+        let privadaA = octet1 === 10;
+        let privadaB = octet1 === 172 && octet2 >= 16 && octet2 <= 31;
+        let privadaC = octet1 === 192 && octet2 === 168;
 
-    
+        let privada = privadaA || privadaB || privadaC;
+        console.log(privada ? "Tipo: privada" : "Tipo: publica");
+    }
+    switch (classe) {
+        case "A":
+            console.log("Mascara por defecto: 255.0.0.0");
+            break;
+        case "B":
+            console.log("Mascara por defecto: 255.255.0.0");
+            break;
+        case "C":
+            console.log("Mascara por defecto: 255.255.255.0");
+            break;
+        default:
+            console.log("Máscara por defecto: No tiene");
+
+
+    } 
 }
+else {
+    console.log("Adreça no vàlida: cada octet ha d'estar entre 0 i 255.")
 }
+
 console.log(classe)
