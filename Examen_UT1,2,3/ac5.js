@@ -6,3 +6,6 @@ if (edad >= 18) {
 else if (edad < 18) {
     console.log("Eres menor de edad")
 }
+else {
+    console.log("error")
+}
