@@ -1,16 +1,17 @@
 const prompt = require('prompt-sync')();
-let num = Number(prompt("Dime un numero de 0-10:  "))
-if (num < 0 || num > 10) {
-    console.log("ERROR")
+let nota = Number(prompt("Dime tu nota: "));
+if (nota < 5) {
+    console.log("SUSPENSO");
 }
-else if (num < 5) {
-    console.log("Suspenso");
+else if (nota >= 5 && nota <=6) {
+    console.log("APROBADO");
 }
-else if (num >= 5 && num < 7) {
-    console.log("Aprobado")
-} else if (num >= 7 && num < 9) {
-    console.log("Notable")
+else if (nota >= 7 && nota <=8) {
+    console.log("NOTABLE");
+}
+else if (nota >= 9 && nota <=10) {
+    console.log("SOBRESALIENTE")
 }
 else {
-    console.log("Sobresaliente")
+    console.log("ERROR")
 }
